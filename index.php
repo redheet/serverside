@@ -18,7 +18,7 @@ if(!strpos($_SERVER['REQUEST_URI'], '/charge')){
 	exit();
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST'){
 	http_response_code(404);
 	echo "PAGE NOT FOUND OR WRONG HTTP REQUEST METHOD IS USED";
 	exit();
@@ -41,12 +41,12 @@ function chargeAPI($api_url, $server_key, $request_body)
 		CURLOPT_RETURNTRANSFER => 1,
 		CURLOPT_POST => 1,
 		CURLOPT_HEADER => 0,
-		//adding header, for response key server
+
 		CURLOPT_HTTPHEADER => array(
 			'Content-Type: application/json',
 			'Accept: application/json',
-			'Authorization: Basic ' . base64_encode($server_key. ':'))
-		,
+			'Authorization: Basic ' . base64_encode($server_key . ':')
+		),
 		CURLOPT_POSTFIELDS => $request_body
 	);
 
