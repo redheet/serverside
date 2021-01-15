@@ -1,7 +1,7 @@
 <?php
 
-// $server_key = "SB-Mid-server-Ve6Mz0sXRqkN41yRDd0d91V7"; //testing
-$server_key = "Mid-server-s88bHHZB2TxMQFH7cD8-erEq"; //production
+$server_key = "SB-Mid-server-Ve6Mz0sXRqkN41yRDd0d91V7"; //testing
+// $server_key = "Mid-server-s88bHHZB2TxMQFH7cD8-erEq"; //production
 
 // if transaction using app.midtrans for production
 // if transaction using app.sandbox for testing 
